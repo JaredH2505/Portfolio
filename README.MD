@@ -1,0 +1,1 @@
+A portfolio website made by Jared Hogan in HTML, CSS, and Javascript
