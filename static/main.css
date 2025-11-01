@@ -1,0 +1,57 @@
+
+body{
+    background-color: #071E22;
+    color: aliceblue;
+    margin: 0;
+    font-family: "DM Serif Text";
+}
+.navBar{
+    background-color: #721817;
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 0.5em;
+}
+.navBar a:visited{
+    color: white;
+}
+.navBar a{
+    font-size: 2rem;
+    padding-left: 1.3em;
+    margin-left: 0.3em;
+    background-repeat: no-repeat;
+}
+.navBar #id{
+    flex-grow: 4;
+}
+.navBar #homeLink{
+    background-image: url("./images/house.svg");
+}
+.navBar #portfolioLink{
+    background-image: url("./images/briefcase.svg");
+}
+.navBar #ecosimLink{
+    background-image: url("./images/dollar.svg");
+    background-position-x: 10px;
+}
+
+#root {
+    background-image: url("./images/background-home-pexels-danny-meneses-340146-943096.jpg");
+    background-size: 100%;
+    height: 100vh;
+}
+
+#mainContent{
+    display: flex;
+    flex-direction: column;
+}
+
+#bodyText{
+    width: 50%;
+}
+
+
+h1, h2, div{
+    align-self: center;
+}
