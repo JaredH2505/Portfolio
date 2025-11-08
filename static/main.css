@@ -3,7 +3,7 @@ body{
     background-color: #071E22;
     color: aliceblue;
     margin: 0;
-    font-family: "DM Serif Text";
+    font-family: 'Open Sans', sans-serif;
 }
 .navBar{
     background-color: #721817;
@@ -28,29 +28,57 @@ body{
 .navBar #homeLink{
     background-image: url("./images/house.svg");
 }
-.navBar #portfolioLink{
+.navBar #projectLink{
     background-image: url("./images/briefcase.svg");
 }
-.navBar #ecosimLink{
-    background-image: url("./images/dollar.svg");
-    background-position-x: 10px;
+.navBar #aboutLink{
+    background-image: url("./images/user.svg");
 }
 
 #root {
-    background-image: url("./images/background-home-pexels-danny-meneses-340146-943096.jpg");
-    background-size: 100%;
+    /*background-image: url("./images/background-home-pexels-danny-meneses-340146-943096.jpg");*/
+    
     height: 100vh;
-}
-
-#mainContent{
     display: flex;
     flex-direction: column;
 }
 
-#bodyText{
-    width: 50%;
+#mainContent{
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    width: 100%;
+    background-image: url("./images/background-home-pexels-danny-meneses-340146-943096.jpg");
+    background-size: 100%;
 }
 
+#projectContent{
+    text-align: center;
+    background-color: rgb(87, 2, 51);
+    flex-grow: 1;
+    width: 100%;
+}
+
+.carousel {
+    display: flex;
+    flex-direction: row;
+    
+}
+.carouselItem{
+    flex-grow: 1;
+    animation-name: fadeIn;
+    animation-duration: 2s;
+    /*animation-iteration-count: infinite;*/
+}
+
+@keyframes fadeOut {
+    from {opacity: 100%;}
+    tp {opacity: 0%;}
+}
+@keyframes fadeIn {
+    from {opacity: 0%;}
+    tp {opacity: 100%;}
+}
 
 h1, h2, div{
     align-self: center;
