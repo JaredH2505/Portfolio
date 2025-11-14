@@ -3,8 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <title>Jared Hogan's Portfolio</title>
-    <script src="./static/carousel.js"></script>
+    <link rel="icon" type="image/svg+xml" href="/static/images/briefcase.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./static/main.css">
+    <script src="/static/spotlight.js"></script>
   </head>
   <body>
     <div id="root">
@@ -17,20 +21,85 @@
         <div id ="projectContent">
             <h1> Projects </h1>
             <h2>Below are some of the projects that I have worked on</h2>
-            <div class="carousel">
-              <div id="cItem1" class="carouselItem">
-                <img>
-                <p>Temp Text</p>
+            <div class="projectSpotlight">
+              <div class="projectItem">
+                  <a href="https://github.com/JaredH2505/Django-Site"> Django based website</a>
+                  <img src="/static/images/Django.png">
+                  <p>The purpose of this site is to be student assignment submission and grading site. It supports user rolls, authentication, and server-based rendering. </p>
+                </div>
+                <div class="projectItem">
+                  <a href="https://github.com/JaredH2505/TCP-Stack"> TCP Emulator</a>
+                  <img src="/static/images/TCP.png">
+                  <p>This project was a recreation of the basics of TCP networking build in a simulator provided by the course professor. 
+                    My code needed to be able to handle packet loss, packet corruption, and variable transmission speed. </p>
+                </div>
+                <div class="projectItem">
+                  <a href="https://github.com/JaredH2505/SmartWatchInterface"> Smart Watch Interface</a>
+                  <img src="/static/images/Smartwatch.PNG">
+                  <p>This project was an assignment to design an input method for text on a smart watch.
+                     This designed was created as a prototype in processing and then tested against other prototypes for usability and speed. </p>
+                </div>
+				<div class="projectItem">
+                  <a href="https://github.com/JaredH2505/CS4230"> Parallel Computing</a>
+                  <img src="/static/images/Parallel.png">
+                  <p>This project is a collection of assignment from my time in the CS 4230 parallel computing class. 
+                    It was my introduction to parallel computing with GPUs via CUDA and networked computer via MPI-io.  </p>
+                </div>
+                <div class="projectItem">
+                  <a href="https://github.com/JaredH2505/CS-4440"> Computer Security</a>
+                  <img src="/static/images/security.png">
+                  <p>This is a final project for CS 4440 covering computer security. 
+                    This is my code for various attacks against the included websites which include SQL injection, cross site scripting, and hash poising. 
+                    These different attacks had to be engineered to overcome various safe guards. </p>
+                </div>
+                <div class="projectItem">
+                  <a href="https://github.com/JaredH2505/EcoSim"> EcoSim</a>
+                  <img src="/static/images/EcoSim.png">
+                  <p>EcoSim was my capstone project for my time at University of Utah. 
+                    It is an economic simulation system based on trend lines, fully integrated into the unity game engine with a demo game to show off what how it can augment gaming experiences. </p>
+                </div>
+            </div>
+            <div class="projectCol">
+              <div class="projectRow">
+                <div class="projectItem">
+                  <a href="https://github.com/JaredH2505/Django-Site"> Django based website</a>
+                  <img src="/static/images/Django.png">
+                  <p>The purpose of this site is to be student assignment submission and grading site. It supports user rolls, authentication, and server-based rendering. </p>
+                </div>
+                <div class="projectItem">
+                  <a href="https://github.com/JaredH2505/TCP-Stack"> TCP Emulator</a>
+                  <img src="/static/images/TCP.png">
+                  <p>This project was a recreation of the basics of TCP networking build in a simulator provided by the course professor. 
+                    My code needed to be able to handle packet loss, packet corruption, and variable transmission speed. </p>
+                </div>
+                <div class="projectItem">
+                  <a href="https://github.com/JaredH2505/SmartWatchInterface"> Smart Watch Interface</a>
+                  <img src="/static/images/Smartwatch.PNG">
+                  <p>This project was an assignment to design an input method for text on a smart watch.
+                     This designed was created as a prototype in processing and then tested against other prototypes for usability and speed. </p>
+                </div>
               </div>
-              <div id="cItem2" class="carouselItem">
-                <img>
-                <p>Temp Text</p>
+              <div class="projectRow">
+                <div class="projectItem">
+                  <a href="https://github.com/JaredH2505/CS4230"> Parallel Computing</a>
+                  <img src="/static/images/Parallel.png">
+                  <p>This project is a collection of assignment from my time in the CS 4230 parallel computing class. 
+                    It was my introduction to parallel computing with GPUs via CUDA and networked computer via MPI-io.  </p>
+                </div>
+                <div class="projectItem">
+                  <a href="https://github.com/JaredH2505/CS-4440"> Computer Security</a>
+                  <img src="/static/images/security.png">
+                  <p>This is a final project for CS 4440 covering computer security. 
+                    This is my code for various attacks against the included websites which include SQL injection, cross site scripting, and hash poising. 
+                    These different attacks had to be engineered to overcome various safe guards. </p>
+                </div>
+                <div class="projectItem">
+                  <a href="https://github.com/JaredH2505/EcoSim"> EcoSim</a>
+                  <img src="/static/images/EcoSim.png">
+                  <p>EcoSim was my capstone project for my time at University of Utah. 
+                    It is an economic simulation system based on trend lines, fully integrated into the unity game engine with a demo game to show off what how it can augment gaming experiences. </p>
+                </div>
               </div>
-              <div id="cItem3" class="carouselItem">
-                <img>
-                <p>Temp Text</p>
-              </div>
-              
             </div>
         </div>
     </div>

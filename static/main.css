@@ -59,25 +59,48 @@ body{
     width: 100%;
 }
 
-.carousel {
+.projectCol {
+    display: flex;
+    flex-direction: column;
+    padding-left: 10rem;
+    padding-right: 10rem;
+}
+.projectRow {
     display: flex;
     flex-direction: row;
-    
 }
-.carouselItem{
-    flex-grow: 1;
-    animation-name: fadeIn;
-    animation-duration: 2s;
-    /*animation-iteration-count: infinite;*/
+.projectItem{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+.projectItem a{
+    font-size: larger;
 }
 
-@keyframes fadeOut {
-    from {opacity: 100%;}
-    tp {opacity: 0%;}
+.projectItem a:visited{
+    color: white;
 }
-@keyframes fadeIn {
-    from {opacity: 0%;}
-    tp {opacity: 100%;}
+.projectItem img{
+    max-width: 300px;
+    max-height: 300px;
+    align-self: center;
+}
+.projectSpotlight{
+    min-height: 25rem;
+}
+.spotlightItem{
+    display: none;
+}
+.spotLightDisplay {
+    display: flex;
+}
+#aboutContent{
+    display: flex;
+    flex-direction: row;
+}
+.headshot{
+
 }
 
 h1, h2, div{
