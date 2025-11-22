@@ -6,14 +6,14 @@ body{
     font-family: 'Open Sans', sans-serif;
 }
 .navBar{
-    background-color: #721817;
+    background-color: rgb(32, 31, 139);
     font-weight: bold;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     padding: 0.5em;
 }
-.navBar a:visited{
+a:visited{
     color: white;
 }
 .navBar a{
@@ -41,20 +41,33 @@ body{
     height: 100vh;
     display: flex;
     flex-direction: column;
+    margin: 0;
 }
 
-#mainContent{
-    display: flex;
-    flex-grow: 1;
-    flex-direction: column;
+.homeContent{
+    margin: 0px;
+    padding: 0px;
     width: 100%;
-    background-image: url("./images/background-home-pexels-danny-meneses-340146-943096.jpg");
-    background-size: 100%;
+    height: 95%;
 }
+
+ .homeText {
+    position: absolute;
+    top:10%;
+    left: 10%;
+    justify-content: center;
+    text-align: center;
+ }
+ .homeImg{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+ }
 
 #projectContent{
     text-align: center;
-    background-color: rgb(87, 2, 51);
+    background-color: #071E22;
     flex-grow: 1;
     width: 100%;
 }
@@ -72,10 +85,15 @@ body{
 .projectItem{
     display: flex;
     flex-direction: column;
+    flex-grow: 1;
     margin: 10px;
+    min-width: 30%;
+    
+    /*Change to all take up same space*/
 }
 .projectItem a{
     font-size: larger;
+    
 }
 
 .projectItem a:visited{
@@ -87,19 +105,35 @@ body{
     align-self: center;
 }
 .projectSpotlight{
-    min-height: 25rem;
+    min-height: 30rem;
 }
 .spotlightItem{
     display: none;
 }
 .spotLightDisplay {
     display: flex;
+    font-size: 1.5rem;
 }
 #aboutContent{
     display: flex;
     flex-direction: row;
+    width: 100%;
 }
+
+.aboutText{
+    width: 40%;
+    text-align: center;
+}
+.aboutText li{
+    text-align: left;
+    list-style-position: inside;
+}
+
 .headshot{
+    position: fixed;
+    top: 30;
+    right: 0;
+    width: 60%;
 
 }
 
